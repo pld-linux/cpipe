@@ -2,7 +2,7 @@ Summary:	counting pipe
 Summary(pl):	potok ze zliczaniem
 Name:		cpipe
 Version:	3.0.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://download.berlios.de/%{name}/%{name}-%{version}.tar.gz
