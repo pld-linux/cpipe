@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://download.berlios.de/%{name}/%{name}-%{version}.tar.gz
+Patch0:		%{name}-make_fix.patch
 URL:		http://developer.berlios.de/projects/cpipe/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,6 +38,7 @@ b³êdów.
 
 %prep
 %setup -q
+%patch0
 
 %build
 touch cmdline.c cmdline.h cpipe.1
