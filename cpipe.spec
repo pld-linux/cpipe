@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://download.berlios.de/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	5ddcc84a71355f8a4eccde26d55c3ac2
 Patch0:		%{name}-make_fix.patch
 URL:		http://developer.berlios.de/projects/cpipe/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
