@@ -2,10 +2,11 @@ Summary:	counting pipe
 Summary(pl):	potok ze zliczaniem
 Name:		cpipe
 Version:	3.0.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://download.berlios.de/%{name}/%{name}-%{version}.tar.gz
+Patch0:		%{name}-tgmath.patch
 URL:		http://developer.berlios.de/projects/cpipe/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,6 +38,7 @@ b³êdów.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 touch cmdline.c cmdline.h cpipe.1
