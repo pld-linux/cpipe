@@ -1,0 +1,10 @@
+--- makefile~	Sun Dec  9 11:05:20 2001
++++ makefile	Sun Jun 30 20:20:16 2002
+@@ -16,6 +16,7 @@
+ 
+ ## Your favorite compiler flags.
+ CFLAGS = -O2 -W -Wall -pedantic
++LDFLAGS = -lm
+ 
+ ########################################################################
+ cpipe: cpipe.o cmdline.o
