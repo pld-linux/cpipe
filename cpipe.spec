@@ -5,8 +5,6 @@ Version:	2.0.0
 Release:	1
 License:	GPL
 Group:		Applications/Archiving
-Group(de):	Applikationen/Archivierung
-Group(pl):	Aplikacje/Archiwizacja
 Source0:	http://wsd.iitb.fhg.de/~kir/cpipehome/%{name}-%{version}.tar.gz
 URL:		http://wsd.iitb.fhg.de/~kir/cpipehome/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
