@@ -12,32 +12,36 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Did you ever want to know how fast your tar is or how much data it has
-transferred already. How about using socket or nc to copy files either with or
-without compression over a fast network connection, which one is faster? 
+transferred already. How about using socket or nc to copy files either
+with or without compression over a fast network connection, which one
+is faster?
 
-If you want to know the answer, use cpipe as a totally unscientific approach to
-measure throughput. Cpipe copies its standard input to its standard output
-while measuring the time it takes to read an input buffer and write an output
-buffer. Statistics of average throughput and the total amount of bytes copied
-are printed to the standard error output. 
+If you want to know the answer, use cpipe as a totally unscientific
+approach to measure throughput. Cpipe copies its standard input to its
+standard output while measuring the time it takes to read an input
+buffer and write an output buffer. Statistics of average throughput
+and the total amount of bytes copied are printed to the standard error
+output.
 
 %description -l pl
-Czy kiedykolwiek zastanawia³e¶ siê jak szybki jest Twój tar, lub ile danych ju¿
-zapisa³? A co my¶lisz o kopiowaniu plików przy u¿yciu socketa lub nc, z
-kompresj± lub bez, po szybkiej sieci - jak bêdzie szybciej?
+Czy kiedykolwiek zastanawia³e¶ siê jak szybki jest Twój tar, lub ile
+danych ju¿ zapisa³? A co my¶lisz o kopiowaniu plików przy u¿yciu
+socketa lub nc, z kompresj± lub bez, po szybkiej sieci - jak bêdzie
+szybciej?
 
-Je¶li chcesz znaæ odpowied¼, u¿yj cpipe jako ca³kowicie nienaukowego podej¶cia
-do pomiaru przepustowo¶ci. Cpipe kopiuje standardowe wej¶cie na wyj¶cie
-jednocze¶nie mierz±c czas jaki zajmuje czytanie i zapisywanie danych.
-Statystyki ¶redniej przepustowo¶ci i ca³kowitej ilo¶ci skopiowanych bajtów s±
-wypisywane na standardowe wyj¶cie b³êdów.
+Je¶li chcesz znaæ odpowied¼, u¿yj cpipe jako ca³kowicie nienaukowego
+podej¶cia do pomiaru przepustowo¶ci. Cpipe kopiuje standardowe wej¶cie
+na wyj¶cie jednocze¶nie mierz±c czas jaki zajmuje czytanie i
+zapisywanie danych. Statystyki ¶redniej przepustowo¶ci i ca³kowitej
+ilo¶ci skopiowanych bajtów s± wypisywane na standardowe wyj¶cie
+b³êdów.
 
 %prep
 %setup -q
 
 %build
 touch cmdline.c cmdline.h cpipe.1
-%{__make} CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
