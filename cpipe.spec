@@ -37,7 +37,6 @@ b³êdów.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 touch cmdline.c cmdline.h cpipe.1
