@@ -8,6 +8,7 @@ Group:		Applications/Archiving
 Group(de):	Applikationen/Archivierung
 Group(pl):	Aplikacje/Archiwizacja
 Source0:	http://wsd.iitb.fhg.de/~kir/cpipehome/%{name}-%{version}.tar.gz
+URL:		http://wsd.iitb.fhg.de/~kir/cpipehome/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -45,8 +46,8 @@ touch cmdline.c cmdline.h cpipe.1
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_mandir}/man1,%{_bindir}}
+
 install cpipe $RPM_BUILD_ROOT%{_bindir}
 install cpipe.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
