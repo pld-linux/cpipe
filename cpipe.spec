@@ -1,12 +1,12 @@
 Summary:	counting pipe
 Summary(pl):	potok ze zliczaniem
 Name:		cpipe
-Version:	2.0.0
+Version:	3.0.0
 Release:	1
 License:	GPL
 Group:		Applications/Archiving
-Source0:	http://wsd.iitb.fhg.de/~kir/cpipehome/%{name}-%{version}.tar.gz
-URL:		http://wsd.iitb.fhg.de/~kir/cpipehome/
+Source0:	http://download.berlios.de/%{name}/%{name}-%{version}.tar.gz
+URL:		http://developer.berlios.de/projects/cpipe/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
