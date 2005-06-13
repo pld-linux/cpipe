@@ -5,7 +5,7 @@ Version:	3.0.1
 Release:	2
 License:	GPL
 Group:		Applications/Archiving
-Source0:	http://download.berlios.de/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://download.berlios.de/cpipe/%{name}-%{version}.tar.gz
 # Source0-md5:	1eaa5b28ef7ef96f1c54d5607ec828b3
 Patch0:		%{name}-make_fix.patch
 URL:		http://developer.berlios.de/projects/cpipe/
@@ -42,8 +42,12 @@ b³êdów.
 %patch0
 
 %build
+# workaround not to use clig
 touch cmdline.c cmdline.h cpipe.1
-%{__make} CFLAGS="%{rpmcflags}"
+
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -Wall"
 
 %install
 rm -rf $RPM_BUILD_ROOT
