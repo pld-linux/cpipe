@@ -1,5 +1,5 @@
 Summary:	Counting pipe
-Summary(pl):	Potok ze zliczaniem
+Summary(pl.UTF-8):   Potok ze zliczaniem
 Name:		cpipe
 Version:	3.0.1
 Release:	2
@@ -24,18 +24,18 @@ buffer and write an output buffer. Statistics of average throughput
 and the total amount of bytes copied are printed to the standard error
 output.
 
-%description -l pl
-Czy kiedykolwiek zastanawia³e¶ siê jak szybki jest Twój tar, lub ile
-danych ju¿ zapisa³? A co my¶lisz o kopiowaniu plików przy u¿yciu
-socketa lub nc, z kompresj± lub bez, po szybkiej sieci - jak bêdzie
+%description -l pl.UTF-8
+Czy kiedykolwiek zastanawiaÅ‚eÅ› siÄ™ jak szybki jest TwÃ³j tar, lub ile
+danych juÅ¼ zapisaÅ‚? A co myÅ›lisz o kopiowaniu plikÃ³w przy uÅ¼yciu
+socketa lub nc, z kompresjÄ… lub bez, po szybkiej sieci - jak bÄ™dzie
 szybciej?
 
-Je¶li chcesz znaæ odpowied¼, u¿yj cpipe jako ca³kowicie nienaukowego
-podej¶cia do pomiaru przepustowo¶ci. Cpipe kopiuje standardowe wej¶cie
-na wyj¶cie jednocze¶nie mierz±c czas jaki zajmuje czytanie i
-zapisywanie danych. Statystyki ¶redniej przepustowo¶ci i ca³kowitej
-ilo¶ci skopiowanych bajtów s± wypisywane na standardowe wyj¶cie
-b³êdów.
+JeÅ›li chcesz znaÄ‡ odpowiedÅº, uÅ¼yj cpipe jako caÅ‚kowicie nienaukowego
+podejÅ›cia do pomiaru przepustowoÅ›ci. Cpipe kopiuje standardowe wejÅ›cie
+na wyjÅ›cie jednoczeÅ›nie mierzÄ…c czas jaki zajmuje czytanie i
+zapisywanie danych. Statystyki Å›redniej przepustowoÅ›ci i caÅ‚kowitej
+iloÅ›ci skopiowanych bajtÃ³w sÄ… wypisywane na standardowe wyjÅ›cie
+bÅ‚Ä™dÃ³w.
 
 %prep
 %setup -q
