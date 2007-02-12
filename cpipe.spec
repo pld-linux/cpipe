@@ -1,5 +1,5 @@
 Summary:	Counting pipe
-Summary(pl.UTF-8):   Potok ze zliczaniem
+Summary(pl.UTF-8):	Potok ze zliczaniem
 Name:		cpipe
 Version:	3.0.1
 Release:	2
