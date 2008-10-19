@@ -1,12 +1,12 @@
 Summary:	Counting pipe
 Summary(pl.UTF-8):	Potok ze zliczaniem
 Name:		cpipe
-Version:	3.0.1
-Release:	3
+Version:	3.0.2
+Release:	1
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://download.berlios.de/cpipe/%{name}-%{version}.tar.gz
-# Source0-md5:	1eaa5b28ef7ef96f1c54d5607ec828b3
+# Source0-md5:	a34f2752628c45d52a99dc38b75d89cb
 Patch0:		%{name}-make_fix.patch
 URL:		http://developer.berlios.de/projects/cpipe/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
