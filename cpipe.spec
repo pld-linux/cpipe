@@ -39,7 +39,7 @@ błędów.
 
 %prep
 %setup -q
-%patch0
+%patch -P0
 
 %build
 # workaround not to use clig
